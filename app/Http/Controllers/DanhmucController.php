@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateDanhMucRequest;
+use App\Http\Requests\EditDanhMucRequest;
 use App\Http\Service\DanhmucService;
 use App\Models\Danhmuc;
 use Illuminate\Http\Request;
@@ -106,7 +107,7 @@ class DanhmucController extends Controller
         ]);
     }
 
-    public function postedit(CreateDanhMucRequest $request ,Danhmuc $danhmuc){
+    public function postedit(EditDanhMucRequest $request ,Danhmuc $danhmuc){
         // POSTEDIT này có trách nghiệm lưu thay đổi của người dùng vào trong database
         // request chứa các thông tin người dùng đã nhập sau khi sửa
         // danhmuc là chứa thông tin trước khi sửa
