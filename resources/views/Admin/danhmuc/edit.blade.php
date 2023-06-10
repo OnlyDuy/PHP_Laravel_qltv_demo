@@ -9,7 +9,7 @@
 
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title">Nhập thông tin sách cần sửa</h3>
+                        <h3 class="card-title">Nhập thông tin cần sửa</h3>
                     </div>
 
                     <form action="/admin/danhmuc/edit/{{$danhmuc->id}}" method="POST" id="quickForm" novalidate="novalidate">

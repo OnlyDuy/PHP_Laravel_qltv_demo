@@ -9,7 +9,7 @@
 
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title">Nhập thông tin sách cần thêm</h3>
+                        <h3 class="card-title">Nhập thông tin cần thêm</h3>
                     </div>
 
                     <form action="/admin/danhmuc/add/store" method="POST" id="quickForm" novalidate="novalidate">
