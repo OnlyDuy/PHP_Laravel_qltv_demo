@@ -36,7 +36,7 @@ Route::middleware('auth')->group(function () {
             Route::post('edit/{danhmuc}',[DanhmucController::class,'postedit']);
             // Tạo 1 route DELETE
             Route::DELETE('delete',[DanhmucController::class,'delete']);
-            Route::post('list/setpage',[DanhmucController::class,'setLimit']);
+            Route::post('listdanhmuc/setpage',[DanhmucController::class,'setLimit']);
         });
         // Route::get('/admin/danhmuc/add', [DanhmucController::class, 'create']);
     });

@@ -30,6 +30,10 @@
                                 </div>
                                 <div class="col-md-2">
                                     <input class="btn btn-success" type="submit" value="Tìm kiếm">
+                                    <a href="/admin/danhmuc/listdanhmuc" class="btn btn-success">Reset</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a class="btn btn-info" href="?sort-by=TenDM&sort-type={{$sortType}}">Sắp xếp danh mục</a>
                                 </div>
                                 <div class="col-md-3 ml-auto">
                                     <a class="btn btn-primary" href="./add" role="button" id="">Thêm danh mục</a>
@@ -37,11 +41,11 @@
                             </div>
                         </form>
                         <div class="col-md-3 mb-2">
-                            <form action="/admin/danhmuc/list/setpage" method="post" id="quickForm">
+                            <form action="/admin/danhmuc/listdanhmuc/setpage" method="post" id="quickForm">
                                 <div class="row">
                                     <div class="form-group">
                                         <label for="setLimit inline-block" class="col-form-label">Số dòng trên mỗi trang:</label>
-                                        <input type="number" class="form-control  inline-block" id="setLimit" name="setLimit" min="1" step="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="số nguyên và lớn hơn 0" required>
+                                        <input type="number" class="form-control  inline-block" id="setLimit" name="setLimit" min="1" step="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Số nguyên và lớn hơn 0" required>
                                     </div>
                                     <div class="d-flex justify-content-center w-25 p-3">
                                         <button type="submit" class="btn btn-outline-dark"> Save </button>
@@ -57,7 +61,7 @@
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">Mã danh mục</th>
-                                <th scope="col" class="text-decoration-none"><a href="?sort-by=TenDM&sort-type={{$sortType}}">Tên danh mục</a></th>
+                                <th scope="col">Tên danh mục</th>
                                 <th scope="col">Mô tả</th>
                                 <th scope="col">Vị trí</th>
                                 <th scope="col">Thao tác</th>
@@ -101,6 +105,7 @@
 
 
             <div class="col-md-6">
+                ahh
             </div>
 
         </div>
